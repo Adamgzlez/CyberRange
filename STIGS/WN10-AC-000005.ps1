@@ -25,18 +25,19 @@
     PS C:\> .\WN10-AC-000005-Remediation.ps1 
 #>
 
-# Set Account Lockout Threshold: 10 invalid logon attempts
-net accounts /lockoutthreshold:10
+# Get the current lockout duration
+$currentLockoutDuration = (net accounts | Select-String "Lockout duration").ToString().Split(":")[1].Trim()
 
-# Set Account Lockout Duration: 15 minutes
-net accounts /lockoutduration:15
+# Set desired lockout duration
+$desiredLockoutDuration = "30"
 
-# Reset Account Lockout Counter After: 10 minutes
-net accounts /lockoutwindow:10
+# Check if the current lockout duration is not set to the desired value
+if ($currentLockoutDuration -ne $desiredLockoutDuration) {
+    # Set Lockout Duration to 30 minutes
+    net accounts /lockoutduration:$desiredLockoutDuration
+    Write-Host "- Lockout duration set to $desiredLockoutDuration minutes."
+} else {
+    Write-Host "- Lockout duration is already set to $desiredLockoutDuration minutes."
+}
 
-# Output a summary of the configured account lockout policy
-Write-Host "Account lockout policy configured:"
-Write-Host "- Lockout threshold: 10 attempts"
-Write-Host "- Lockout duration: 15 minutes"
-Write-Host "- Reset counter after: 10 minutes"
 
