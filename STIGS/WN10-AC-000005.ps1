@@ -29,11 +29,11 @@
 $currentLockoutDuration = (net accounts | Select-String "Lockout duration").ToString().Split(":")[1].Trim()
 
 # Set desired lockout duration
-$desiredLockoutDuration = "30"
+$desiredLockoutDuration = "15"
 
 # Check if the current lockout duration is not set to the desired value
 if ($currentLockoutDuration -ne $desiredLockoutDuration) {
-    # Set Lockout Duration to 30 minutes
+    # Set Lockout Duration to 15 minutes
     net accounts /lockoutduration:$desiredLockoutDuration
     Write-Host "- Lockout duration set to $desiredLockoutDuration minutes."
 } else {
