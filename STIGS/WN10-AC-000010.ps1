@@ -25,8 +25,16 @@
     PS C:\> .\WN10-AC-000010-Remediation.ps1 
 #>
 
-# Set Account Lockout Threshold: 3 invalid logon attempts
-net accounts /lockoutthreshold:3
+# Get the current account lockout threshold
+$currentThreshold = (net accounts | Select-String "Lockout threshold").ToString().Split(":")[1].Trim()
 
-# Output a summary of the configured account lockout policy
-Write-Host "- Lockout threshold: 3 attempts"
+# Check if the threshold is not already set to 3
+if ($currentThreshold -ne "3") {
+    # Set the Account Lockout Threshold to 3 invalid logon attempts
+    net accounts /lockoutthreshold:3
+    Write-Host "- Lockout threshold set to 3 attempts."
+} else {
+    # Inform that it is already set to 3
+    Write-Host "- Lockout threshold is already set to 3 attempts."
+}
+
