@@ -25,4 +25,17 @@
     PS C:\> .\WN10-00-000120-Remediation.ps1 
 #>
 
-# YOUR CODE GOES HERE
+# Check if TFTP Client is installed
+$tftpClient = Get-WindowsOptionalFeature -Online -FeatureName TFTP
+
+if ($tftpClient.State -eq "Enabled") {
+    Write-Output "TFTP Client is installed. Proceeding with uninstallation..."
+
+    # Disable (uninstall) TFTP Client
+    Disable-WindowsOptionalFeature -Online -FeatureName TFTP -NoRestart
+
+    Write-Output "TFTP Client has been uninstalled successfully."
+} else {
+    Write-Output "TFTP Client is not installed."
+}
+
