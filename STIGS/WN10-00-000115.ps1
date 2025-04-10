@@ -25,4 +25,16 @@
     PS C:\> .\__remediation_template(STIG-ID-WN10-AU-000500).ps1 
 #>
 
-# YOUR CODE GOES HERE
+# Check if Telnet Client is installed
+$feature = Get-WindowsOptionalFeature -Online -FeatureName TelnetClient
+
+if ($feature.State -eq "Enabled") {
+    Write-Output "Telnet Client is installed. Proceeding to uninstall..."
+
+    # Disable the Telnet Client feature
+    Disable-WindowsOptionalFeature -Online -FeatureName TelnetClient -NoRestart
+
+    Write-Output "Telnet Client has been uninstalled successfully."
+} else {
+    Write-Output "Telnet Client is not installed on this system."
+}
