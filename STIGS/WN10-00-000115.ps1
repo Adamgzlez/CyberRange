@@ -6,12 +6,12 @@
     Author          : Adam Gonzalez
     LinkedIn        : linkedin.com/in/joshmadakor/
     GitHub          : github.com/joshmadakor1
-    Date Created    : 2024-09-09
-    Last Modified   : 2024-09-09
+    Date Created    : 2025-04-09
+    Last Modified   : 2025-04-09
     Version         : 1.0
     CVEs            : N/A
     Plugin IDs      : N/A
-    STIG-ID         : WN10-AC-000020
+    STIG-ID         : WN10-00-000115
 
 .TESTED ON
     Date(s) Tested  : 
@@ -22,7 +22,7 @@
 .USAGE
     Put any usage instructions here.
     Example syntax:
-    PS C:\> .\__remediation_template(STIG-ID-WN10-AU-000500).ps1 
+    PS C:\> .\WN10-00-000115-Remediation.ps1 
 #>
 
 # Check if Telnet Client is installed
