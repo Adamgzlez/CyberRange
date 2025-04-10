@@ -25,10 +25,13 @@
     PS C:\> .\WN10-AC-000015-Remediation.ps1 
 #>
 
-# Set Reset Account Lockout Counter After: Replace with desired value (e.g., 15 minutes or 30 minutes)
-$resetPeriod = 15  # Change this value as needed (e.g., 30 for 30 minutes)
+# Define the reset period in minutes
+$resetPeriod = 15  # Change this value as needed
+
+# Apply the reset account lockout counter time (for local accounts policy)
 net accounts /lockoutwindow:$resetPeriod
 
 # Output a summary of the configured account lockout policy
-
+Write-Host "Account lockout policy updated:"
 Write-Host "- Reset counter after: $resetPeriod minutes"
+
