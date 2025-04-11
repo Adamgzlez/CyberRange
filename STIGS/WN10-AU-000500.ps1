@@ -4,10 +4,10 @@
 
 .NOTES
     Author          : Adam Gonzalez
-    LinkedIn        : linkedin.com/in/joshmadakor/
-    GitHub          : github.com/joshmadakor1
-    Date Created    : 2025-09-04
-    Last Modified   : 2025-09-04
+    LinkedIn        : linkedin.com/in/adamgzlez
+    GitHub          : github.com/Adamgzlez
+    Date Created    : 2025-04-10
+    Last Modified   : 2025-04-11
     Version         : 1.0
     CVEs            : N/A
     Plugin IDs      : N/A
