@@ -1,11 +1,11 @@
 <#
 .SYNOPSIS
-    This PowerShell script ensures that the maximum size of the Windows Application event log is at least 32768 KB (32 MB).
+    This PowerShell script ensures that Simple TCP/IP Services are not installed on the system.
 
 .NOTES
     Author          : Adam Gonzalez
-    LinkedIn        : linkedin.com/in/joshmadakor/
-    GitHub          : github.com/joshmadakor1
+    LinkedIn        : linkedin.com/in/adamgzlez
+    GitHub          : github.com/Adamgzlez
     Date Created    : 2025-04-09
     Last Modified   : 2025-04-09
     Version         : 1.0
