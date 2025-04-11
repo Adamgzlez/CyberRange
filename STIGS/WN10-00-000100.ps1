@@ -1,6 +1,6 @@
 <#
 .SYNOPSIS
-    This PowerShell script ensures that the Internet Information System (IIS) or its subcomponents are not be installed on a workstation.
+    This PowerShell script ensures that the Internet Information System (IIS) or its subcomponents are not installed on a workstation.
 
 .NOTES
     Author          : Adam Gonzalez
