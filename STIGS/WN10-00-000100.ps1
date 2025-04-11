@@ -4,8 +4,8 @@
 
 .NOTES
     Author          : Adam Gonzalez
-    LinkedIn        : linkedin.com/in/joshmadakor/
-    GitHub          : https://github.com/Adamgzlez
+    LinkedIn        : linkedin.com/in/adamgzlez
+    GitHub          : github.com/Adamgzlez
     Date Created    : 2025-04-09
     Last Modified   : 2025-04-09
     Version         : 1.0
