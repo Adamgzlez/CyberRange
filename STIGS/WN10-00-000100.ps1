@@ -1,11 +1,11 @@
 <#
 .SYNOPSIS
-    This PowerShell script ensures that the maximum size of the Windows Application event log is at least 32768 KB (32 MB).
+    This PowerShell script ensures that the Internet Information System (IIS) or its subcomponents are not be installed on a workstation.
 
 .NOTES
     Author          : Adam Gonzalez
     LinkedIn        : linkedin.com/in/joshmadakor/
-    GitHub          : github.com/joshmadakor1
+    GitHub          : https://github.com/Adamgzlez
     Date Created    : 2025-04-09
     Last Modified   : 2025-04-09
     Version         : 1.0
