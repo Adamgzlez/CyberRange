@@ -1,6 +1,6 @@
 <#
 .SYNOPSIS
-    This PowerShell script ensures that the maximum size of the Windows Application event log is at least 32768 KB (32 MB).
+    This PowerShell script ensures that users are not allowed to ignore Windows Defender SmartScreen filter warnings for unverified files in Microsoft Edge.
 
 .NOTES
     Author          : Adam Gonzalez
