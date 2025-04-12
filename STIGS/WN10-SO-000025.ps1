@@ -1,13 +1,13 @@
 <#
 .SYNOPSIS
-    This PowerShell script ensures that the maximum size of the Windows Application event log is at least 32768 KB (32 MB).
+    This PowerShell script ensures that the built-in guest account is renamed.
 
 .NOTES
     Author          : Adam Gonzalez
     LinkedIn        : linkedin.com/in/adamgzlez
     GitHub          : github.com/Adamgzlez
     Date Created    : 2025-04-10
-    Last Modified   : 2025-04-11
+    Last Modified   : 2025-04-12
     Version         : 1.0
     CVEs            : N/A
     Plugin IDs      : N/A
