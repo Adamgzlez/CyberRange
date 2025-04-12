@@ -1,6 +1,6 @@
 <#
 .SYNOPSIS
-    This PowerShell script ensures that the maximum size of the Windows Application event log is at least 32768 KB (32 MB).
+    This PowerShell script ensures that the Telnet Client is not be installed on the system.
 
 .NOTES
     Author          : Adam Gonzalez
