@@ -1,6 +1,6 @@
 <#
 .SYNOPSIS
-    This PowerShell script ensures that the Telnet Client is not be installed on the system.
+    This PowerShell script ensures that the Telnet Client is not installed on the system.
 
 .NOTES
     Author          : Adam Gonzalez
